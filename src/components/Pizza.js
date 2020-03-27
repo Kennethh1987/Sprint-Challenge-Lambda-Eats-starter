@@ -173,10 +173,10 @@ const inputChange = e => {
     <h3>Select Pizza Size. </h3>
     <label htmlFor="size">Size: </label>
     <select id="size" name="size" placeholder="size" value={formState.size} onChange={inputChange}>
-      <option value="Small">Small</option>
-      <option value="Medium">Medium</option>
-      <option value="Large">Large</option>
-      <option value="Jumbo">X-Large</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option name="large" value="large">Large</option>
+      <option value="x large">X-Large</option>
     </select>
     <br />
     <h3>Choice of Sauce</h3>
@@ -209,9 +209,8 @@ const inputChange = e => {
     <label htmlFor="instructions">Special Instructions: </label>
     <textarea
       id="instructions"
-      type="text"
       name="instructions"
-      value={formState.name}
+      value={formState.instructions}
       onChange={inputChange}
     /> 
       <pre>{JSON.stringify(post, null, 2)}</pre>
